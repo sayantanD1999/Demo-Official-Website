@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Front Point | About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body,
+    html {
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(43, 41, 41);
+        min-height: 100vh;
+    }
+
+   
+
+    .text {
+        text-align: center;
+        font-size: large;
+    }
+
+    .parallax {
+        background-image: url('wall.jpg');
+
+        /* Full height */
+        height: 50%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax2 {
+        background-image: url('highlight1.jpg');
+
+        /* Full height */
+        height: 50%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 16, 184);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(25, 3, 224);
+  color: aliceblue;
+  transition: 0.3s;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+.navbar{
+      
+      background: rgb(75, 72, 72) !important;
+    }
+
+</style>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#">Nature</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#home" style="color: black;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#explore" style="color: black;">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#adventure" style="color: black;">Adventure</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog" style="color: black;">Vlog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" style="color: black;">Contact</a>
+                  </li>
+                
+              </ul>
+             
+            </div>
+           </div>
+          </nav>
+        </header>
+    
+
+    <div class="slide-container">
+
+        <div class="myslide">
+            <img src="s.jpg" alt="Himalayas" style="height:20%; width: 100%;">
+            <div class="caption" style="text-align: center; color:white; font-weight: bold; font-size: large;">Text1</div>
+        </div>
+        <div class="myslide">
+            <img src="s2.jpeg" alt="Himalayas" style="height:20%; width: 100%;">
+            <div class="caption" style="text-align: center; color:white; font-weight: bold; font-size: large;">Text2</div>
+        </div>
+        <div class="myslide">
+            <img src="s3.jpg" alt="Himalayas" style="height:20%; width: 100%;">
+            <div class="caption" style="text-align: center; color:white; font-weight: bold; font-size: large;">Text3</div>
+        </div>
+        <div class="myslide">
+            <img src="wall3.png" alt="Himalayas" style="height:20%; width: 100%;">
+            <div class="caption" style="text-align: center; color:white; font-weight: bold; font-size: large;">Text4</div>
+        </div>
+    </div>
+    <div class="parallax"></div>
+    
+    <div class="jumbotron" style="overflow-x: hidden;">
+
+        <h1 style="text-align: center; color: blue;">Our Services</h1>
+        <p style="text-align: center;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+            not
+            only five centuries, but also the leap<br>
+            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release
+            of Letraset sheets containing Lorem Ipsum passages,<br>
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            <br><br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+            not
+            only five centuries, but also the leap<br>
+            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release
+            of Letraset sheets containing Lorem Ipsum passages,<br>
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+
+    </div>
+    <div class="parallax"></div>
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-6">
+                <div data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="500" style="display: flex;  justify-content: center;">
+                        <div class="card">
+                            <img src="work.jpg" alt="Avatar" height="80%" width="100%" style="margin: auto;">
+                            <div class="container">
+                                <h4 style="text-align: center;"><b>Work Culture</b></h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been
+                                the
+                                industry's
+                                standard dummy text ever since the 1500s,<br>
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="500" style="display: flex; justify-content: center;">
+                        <div class="card">
+                            <img src="highlight4.jpg" alt="Avatar" height="80%" width="100%" style="margin: auto;">
+                            <div class="container">
+                              <h4 style="text-align: center;"><b>Support</b></h4> 
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been
+                                the
+                                industry's
+                                standard dummy text ever since the 1500s,<br>
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div data-aos="fade-up-right" data-aos-delay="50" data-aos-duration="500" style="display: flex;  justify-content: center;">
+                        <div class="card">
+                            <img src="inhertance.jpg" alt="Avatar" height="80%" width="100%">
+                            <div class="container">
+                                <h4 style="text-align: center;"><b>Inheritance</b></h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been
+                                the
+                                industry's
+                                standard dummy text ever since the 1500s,<br>
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="500" style="display: flex; justify-content: center;">
+                        <div class="card">
+                            <img src="highlight3.jpg" alt="Avatar" height="80%" width="100%" style="margin: auto;">
+                            <div class="container">
+                              <h4 style="text-align: center;"><b>Growth</b></h4> 
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been
+                                the
+                                industry's
+                                standard dummy text ever since the 1500s,<br>
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="parallax2"></div>
+
+    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="500"
+        style="height: 400px; overflow: auto; background-color: rgb(30, 39, 39); color: aliceblue;">
+
+        <h1 style="text-align: center; color: rgb(89, 248, 222);">
+            Our Solutions
+        </h1>
+        <p style="text-align: center;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the
+            industry's
+            standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+            not
+            only five centuries, but also the leap<br>
+            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release
+            of Letraset sheets containing Lorem Ipsum passages,<br>
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the
+            industry's
+            standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+            not
+            only five centuries, but also the leap<br>
+            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release
+            of Letraset sheets containing Lorem Ipsum passages,<br>
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <br>
+            <h4 style="text-align: center;"><a href="" style="color: crimson;">www.link.com</a></h4>
+
+        </p>
+
+    </div>
+    <button id="myBtn" onclick="topFunction()"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    <div class="parallax2"></div>
+    </div>
+    <script>
+        AOS.init();
+        var index = 0;
+        var i;
+        slideshow();
+        function slideshow() {
+            var slides = document.getElementsByClassName("myslide");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            index++;
+            if (index > slides.length) {
+                index = 1;
+            }
+
+
+            slides[index - 1].style.display = "block";
+            setTimeout(slideshow, 2000);
+        }
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
