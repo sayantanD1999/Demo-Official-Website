@@ -1,6 +1,12 @@
 body{
-  font-family: 'Times New Roman', Times, serif;
+font-family: 'Roboto', sans-serif;
   font-style:initial;
+}
+
+input{
+  height: 40px;
+  width: 80%;
+  border-radius: 5px;
 }
 
 a {
