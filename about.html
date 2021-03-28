@@ -32,6 +32,48 @@
     font-family: 'Roboto', sans-serif;
     font-size: large;
   }
+
+  #animate1 {
+    position: relative;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  @keyframes anim1 {
+        0% {
+            right: 0px;
+        }
+
+        50% {
+            right: 10px;
+        }
+
+        100% {
+            right: 0px;
+        }
+    }
+
+    #animate2 {
+    position: relative;
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  @keyframes anim2 {
+        0% {
+            left:0px;
+        }
+
+        50% {
+          left:10px;
+        }
+
+        100% {
+            left: 0px;
+        }
+    }
 </style>
 
 <body>
@@ -65,57 +107,43 @@
       </div>
     </nav>
   </header>
-
-  <div class="jumbotron">
-    <div style="width: 100%; background-color: black;">
-      <img src="Logo.png" alt="logo" style="padding-left: 30%;" height="400px" width="65%">
+  
+  <div class="jumbotron" style="background-color: white;">
+    <br><br><br>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="pic/undraw_connected_world_wuay.png" id="animate1" style="height:inherit; width: inherit;">
+      </div>
+      <div class="col-md-6" id="animate2">
+        <img src="pic/undraw_dev_focus_b9xo.png" id="animate2" style="height:inherit; width: inherit;">
+      </div>
     </div>
-
-    <h1>Our Organization</h1>
     <div>
+      <br><br><br><br><br><br>
       <div class="row">
-        <div class="col-sm-8">
-          <strong>
+        <div class="col-sm-8" style="text-align: center;">
+          <h1 style="text-align: center;">Our Organization</h1>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
-            standard dummy text ever since the 1500s,<br>
+            standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
             not
-            only five centuries, but also the leap<br>
+            only five centuries, but also the leap
             into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,<br>
+            standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
             not
-            only five centuries, but also the leap<br>
+            only five centuries, but also the leap
             into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
             release
-            of
-            Letraset sheets containing Lorem Ipsum passages,<br>
+            of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            <br><br>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s,<br>
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-            not
-            only five centuries, but also the leap<br>
-            into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,<br>
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-            not
-            only five centuries, but also the leap<br>
-            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-            release
-            of
-            Letraset sheets containing Lorem Ipsum passages,<br>
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </strong>
         </div>
 
         <div class="col-sm-4">
           <div id="container" style="display: flex; justify-content: center;">
             <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="300">
-              <img src="office.jpg" height="350px" width="350px">
+              <img src="pic/pexels-pixabay-269077.jpg" height="350px" width="350px">
             </div>
           </div>
 
@@ -134,12 +162,13 @@
         <div class="row">
           <div class="col-sm-6">
 
-            <div id="container"  data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" style="display:flex; justify-content: center;">
+            <div id="container" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+              style="display:flex; justify-content: center;">
               <div id="child">
                 <div class="flip-img">
                   <div class="flip-img-inner">
                     <div class="flip-img-front">
-                      <img src="jane doe.png" style="width:200px;height:200px;">
+                      <img src="pic/jane doe.png" style="width:200px;height:200px;">
                       <div style="padding: 2px 16px;">
                         <h4><b>Co-Founder</b></h4>
                         <p>!...Flip...!</p>
@@ -158,12 +187,13 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div id="container" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500" style="display:flex; justify-content: center;">
+            <div id="container" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
+              style="display:flex; justify-content: center;">
               <div id="child">
                 <div class="flip-img">
                   <div class="flip-img-inner">
                     <div class="flip-img-front">
-                      <img src="jon_doe.png" style="width:200px;height:200px;">
+                      <img src="pic/jon_doe.png" style="width:200px;height:200px;">
                       <div style="padding: 2px 16px;">
                         <h4><b>Co-Founder</b></h4>
                         <p>!...Flip...!</p>
@@ -186,10 +216,10 @@
     </div>
     <br><br>
     <br><br>
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
 
-      <div style="background-color: beige; text-align: center;">
-        <h2 style="text-align: center;">Our Vision</h2>
+      <div style="background-color: #536162; text-align: center; color: aliceblue;">
+        <h2 style="text-align: center; ">Our Vision</h2>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s,<br>
         when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
@@ -212,12 +242,12 @@
         <h2 style="text-align: center;"><strong>Our Key Members</strong></h2>
         <div class="row">
           <div class="col-sm-4">
-            <div id="container" style="display:flex; justify-content: center;">
+            <div id="container" style="display:flex; justify-content: center; align-items: center;">
               <div id="child">
                 <div class="flip-img">
                   <div class="flip-img-inner">
                     <div class="flip-img-front">
-                      <img src="jane doe.png" style="width:200px;height:200px;">
+                      <img src="pic/jane doe.png" style="width:200px;height:200px;">
                       <div style="padding: 2px 16px;">
                         <h4><b>CEO</b></h4>
                         <p>!...Flip...!</p>
@@ -241,7 +271,7 @@
                 <div class="flip-img">
                   <div class="flip-img-inner">
                     <div class="flip-img-front">
-                      <img src="jon_doe.png" style="width:200px;height:200px;">
+                      <img src="pic/jon_doe.png" style="width:200px;height:200px;">
                       <div style="padding: 2px 16px;">
                         <h4><b>Project Head</b></h4>
                         <p>!...Flip...!</p>
@@ -264,7 +294,7 @@
                 <div class="flip-img">
                   <div class="flip-img-inner">
                     <div class="flip-img-front">
-                      <img src="jane doe.png" style="width:200px;height:200px;">
+                      <img src="pic/jane doe.png" style="width:200px;height:200px;">
                       <div style="padding: 2px 16px;">
                         <h4><b>HR</b></h4>
                         <p>!...Flip...!</p>
@@ -288,77 +318,45 @@
 
 
     <br><br><br><br>
-    <div class="container-fluid" style="background-color: blanchedalmond;">
+    <div class="container-fluid" style="background-color:#424642; color:aliceblue">
 
       <h2 style="text-align: center;">Our Achievements</h2>
 
       <ul>
-        <strong>
-          <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+      
+          <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
             standard dummy text ever since the 1500s,<br>
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
             not
             only five centuries, but also the leap<br>
             into electronic typesetting, remaining essentially unchanged. </li>
-        </strong>
-        <strong>
-          <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        
+          <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
             standard dummy text ever since the 1500s,<br>
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
             not
             only five centuries, but also the leap<br>
             into electronic typesetting, remaining essentially unchanged. </li>
-        </strong>
-        <strong>
-          <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+       
+          <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
             standard dummy text ever since the 1500s,<br>
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
             not
             only five centuries, but also the leap<br>
             into electronic typesetting, remaining essentially unchanged. </li>
-        </strong>
-        <strong>
-          <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+
+          <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
             standard dummy text ever since the 1500s,<br>
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
             not
             only five centuries, but also the leap<br>
             into electronic typesetting, remaining essentially unchanged. </li>
-        </strong>
-        <strong>
-          <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s,<br>
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-            not
-            only five centuries, but also the leap<br>
-            into electronic typesetting, remaining essentially unchanged. </li>
-        </strong>
-        <strong>
-          <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s,<br>
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-            not
-            only five centuries, but also the leap<br>
-            into electronic typesetting, remaining essentially unchanged. </li>
-        </strong>
-        <strong>
-          <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s,<br>
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-            not
-            only five centuries, but also the leap<br>
-            into electronic typesetting, remaining essentially unchanged. </li>
-        </strong>
+          <br><br>
       </ul>
-
-
     </div>
   </div>
 
