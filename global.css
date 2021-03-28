@@ -1,8 +1,7 @@
 body{
-font-family: 'Roboto', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-style:initial;
 }
-
 input{
   height: 40px;
   width: 80%;
@@ -101,3 +100,21 @@ div.flip-img {
       color: black;
   }
   
+  .card{
+    height: 350px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .card-img-top{
+    height:150px;
+  }
+  .col-md-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-md-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
