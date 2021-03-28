@@ -32,9 +32,30 @@
         font-family: 'Roboto', sans-serif;
         font-size: large;
     }
+
+    #top-img {
+        position: relative;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+        0% {
+            top: 0px;
+        }
+
+        50% {
+            top: 10px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
 </style>
 
-<body style="background-color: rgb(226, 226, 226);">
+<body style="background-color: rgba(255, 255, 255);">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
             <div class="container">
@@ -71,170 +92,197 @@
     <div class="container" style="text-align: center;">
         <h1>Project Showcase</h1>
 
-        <p style="font-size: large; font-family: Georgia, 'Times New Roman', Times, serif;">Our organization has
-            contributed
-            its immense knowledge and skill to a large number of projects <br> and thus gaining intense experience on
-            various fields of modern technology <br> related to computer science.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis aliquam ullam mollitia
-            perspiciatis possimus eaque sunt natus maxime alias, ipsum quisquam illo ex cumque consequatur molestias
-            modi delectus deleniti.
-        </p>
-
-
+        <div class="row">
+            <div class="col-md-6">
+                <p style="font-size: large; font-family: Georgia, 'Times New Roman', Times, serif;">Our organization has
+                    contributed
+                    its immense knowledge and skill to a large number of projects and thus gaining intense experience on
+                    various fields of modern technology related to computer science.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis aliquam ullam mollitia
+                    perspiciatis possimus eaque sunt natus maxime alias, ipsum quisquam illo ex cumque consequatur
+                    molestias
+                    modi delectus deleniti.
+                </p>
+            </div>
+            <div class="col-md-6" id="top-img">
+                <img src="pic/se.png" style="height:inherit; width:inherit;" alt="">
+            </div>
+        </div>
     </div>
-
+    <br><br>
 
     <div class="container-fluid">
 
-        <div data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="300">
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="300">
 
-            <div class="jumbotron" style="background-color: rgb(146, 201, 223);">
+            <div class="jumbotron" style="background-color: rgb(235, 235, 235);">
                 <h2 style="text-align: center; color: rgb(0, 0, 0);"><Strong>Projects on Java</Strong><img
-                        src="javalogo.png" alt="java logo" height="50px" width="70px"></h2>
+                        src="pic/javalogo.png" alt="java logo" height="50px" width="70px"></h2>
                 <br><br>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div style="display: flex; justify-content: center;">
-                            <div class="gallery">
-                                <div id="anim1"><img src="java1.jpg" style=" height: 60%; width: 60%;"
-                                        alt="Cinque Terre">
-                                </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/java1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Android App Development</h5>
+                                <p class="card-text"> Android App Develpments<br>
+                                    Devloped By : Jon Doe <br>
+                                    Languages used: Java<br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="display: flex; justify-content: center;">
-                        <div>
-                            <p>
-                                Android App Develpments<br>
-                                Devloped By : Jon Doe <br>
-                                Languages used: Java<br>
-                                <a href="">www.thisprojectlink.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div style="display: flex; justify-content: center;">
-                            <div class="gallery">
-                                <div id="anim1"><img src="java2.webp" style=" height: 60%; width: 60%;"
-                                        alt="Cinque Terre">
-                                </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/pexels-eduardo-rosas-907489.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Android App Development</h5>
+                                <p class="card-text"> Android App Develpments<br>
+                                    Devloped By : Jon Doe <br>
+                                    Languages used: Java<br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="display: flex; justify-content: center;">
-                        <div>
-                            <p>
-                                Android App Develpments<br>
-                                Devloped By : Jon Doe <br>
-                                Languages used: Java<br>
-                                <a href="">www.thisprojectlink.com</a>
-                            </p>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/pexels-pixabay-38544.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Android App Development</h5>
+                                <p class="card-text"> Android App Develpments<br>
+                                    Devloped By : Jon Doe <br>
+                                    Languages used: Java<br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/pexels-kevin-ku-577585.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Android App Development</h5>
+                                <p class="card-text"> Android App Develpments<br>
+                                    Devloped By : Jon Doe <br>
+                                    Languages used: Java<br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="300">
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="300">
 
-            <div class="jumbotron" style="background-color: rgb(128, 240, 153);">
+            <div class="jumbotron" style="background-color: rgb(235, 235, 235);">
                 <h2 style="text-align: center; color: rgb(30, 77, 230);"><Strong>Projects on Python</Strong><img
-                        src="pythonlogo.png" alt="python logo" height="50px" width="70px"></h2>
+                        src="pic/pythonlogo.png" alt="python logo" height="50px" width="70px"></h2>
                 <br><br>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div style="display: flex; justify-content: center;">
-                            <div class="gallery">
-                                <div id="anim1"><img src="python1.webp" style=" height: 60%; width: 60%;"
-                                        alt="Cinque Terre">
-                                </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/java1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Django Project</h5>
+                                <p class="card-text"> Lorem ipsum <br>
+                                    Devloped By : Jon Doe <br>
+                                    Django<br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="display: flex; justify-content: center;">
-                        <div>
-                            <p>
-                                Lorem ipsum <br>
-                                Devloped By : Jon Doe <br>
-                                Languages used: Python & Django<br>
-                                <a href="">www.thisprojectlink.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div style="display: flex; justify-content: center;">
-                            <div class="gallery">
-                                <div id="anim1"><img src="python2.webp" style=" height: 60%; width: 60%;"
-                                        alt="Cinque Terre">
-                                </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/pexels-eduardo-rosas-907489.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Python Project</h5>
+                                <p class="card-text"> Lorem ipsum <br>
+                                    Devloped By : Jon Doe <br>
+                                    Python<br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="display: flex; justify-content: center;">
-                        <div>
-                            <p>
-                                Web scrapping mountain weather forecasting<br>
-                                Devloped By : Jane Doe <br>
-                                Languages used: Python<br>
-                                <a href="">www.thisprojectlink.com</a>
-                            </p>
-
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/python2.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Extensive Numpy Usage</h5>
+                                <p class="card-text">Web scrapping mountain weather forecasting <br>
+                                    Python & Django
+                                </p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/python1.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsium</h5>
+                                <p class="card-text"> Lorem ipsum <br>
+                                    Devloped By : Jon Doe <br>
+                                    Python & Django<br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="300">
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="300">
 
-            <div class="jumbotron" style="background-color: rgb(238, 255, 86);">
+            <div class="jumbotron" style="background-color: rgb(235, 235, 235);">
                 <h2 style="text-align: center; color: rgb(45, 83, 250);"><Strong>Javascript Projects</Strong><img
-                        src="js.jpg" alt="python logo" height="50px" width="70px"></h2>
+                        src="pic/js.jpg" alt="python logo" height="50px" width="70px"></h2>
                 <br><br>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div style="display: flex; justify-content: center;">
-                            <div class="gallery">
-                                <div id="anim1"><img src="js2.png" style=" height: 60%; width: 60%;" alt="Cinque Terre">
-                                </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/java1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Web App</h5>
+                                <p class="card-text"> Lorem Ipsium <br>
+                                    Devloped By : Jane Doe <br>
+                                    REACT <br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="display: flex; justify-content: center;">
-                        <div>
-                            <p>
-                                Web APP <br>
-                                Devloped By : Jane Doe <br>
-                                Languages used: Javascript HTML5 CSS Bootstrap jquery<br>
-                                <a href="">www.thisprojectlink.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div style="display: flex; justify-content: center;">
-                            <div class="gallery">
-                                <div id="anim1"><img src="js1.jpg" style=" height: 60%; width: 60%;" alt="Cinque Terre">
-                                </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/pexels-eduardo-rosas-907489.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Web App</h5>
+                                <p class="card-text"> Lorem Ipsium <br>
+                                    Devloped By : Jane Doe <br>
+                                    Javascript & Jquery <br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="display: flex; justify-content: center;">
-                        <div>
-                            <p>
-                                Web Application<br>
-                                Devloped By : Jane Doe <br>
-                                Languages used: Javascript HTML5 CSS Bootstrap jquery<br>
-                                <a href="">www.thisprojectlink.com</a>
-                            </p>
-
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/python2.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Web App</h5>
+                                <p class="card-text"> Lorem Ipsium <br>
+                                    Devloped By : Jane Doe <br>
+                                    Javascript & Bootstrap <br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="pic/python1.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Web App</h5>
+                                <p class="card-text"> Lorem Ipsium <br>
+                                    Devloped By : Jane Doe <br>
+                                    Javascript & HTML5 <br></p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
                         </div>
                     </div>
                 </div>
